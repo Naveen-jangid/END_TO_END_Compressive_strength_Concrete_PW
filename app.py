@@ -1,12 +1,14 @@
 import joblib
 import pandas as pd
 from flask import Flask, request, jsonify
+import os
 
 # Load trained model
 model = joblib.load("best_rf_model.pkl")
 
 # Get the correct feature names from the model
 expected_features = model.feature_names_in_
+
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -15,6 +17,9 @@ app = Flask(__name__)
 def home():
     return jsonify({"message": "Welcome to Concrete Strength Prediction API"}), 200
 
+@app.route('/')
+def home():
+    return "Flask API is running on Render!"
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -49,4 +54,5 @@ def predict():
 
 # Run the app
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000, debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Use Render's assigned port
+    app.run(host="0.0.0.0", port=port)

@@ -1,0 +1,286 @@
+2025-02-22 19:18:30,711 - INFO - Running in Jupyter Notebook. Using default dataset.
+2025-02-22 19:18:30,715 - INFO - Loading dataset from concrete_data.csv
+2025-02-22 19:18:30,728 - INFO - Splitting dataset.
+2025-02-22 19:18:30,737 - INFO - Training and evaluating models.
+2025-02-22 19:18:30,749 - INFO - Linear Regression - MSE: 113.44365763931016, RMSE: 10.650993270080972, R² Score: 0.6006252770706919, Latency: 0.006998777389526367
+2025-02-22 19:18:30,764 - INFO - Decision Tree - MSE: 48.65592669902914, RMSE: 6.975380039756195, R² Score: 0.8287083857426686, Latency: 0.012022018432617188
+2025-02-22 19:18:31,511 - INFO - Random Forest - MSE: 26.613475303985123, RMSE: 5.158824992571964, R² Score: 0.9063081220502538, Latency: 0.7432434558868408
+2025-02-22 19:18:31,582 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, R² Score: 0.9306274832011667, Latency: 0.06539773941040039
+2025-02-22 19:18:31,589 - INFO - Starting hyperparameter tuning for Random Forest.
+2025-02-22 19:18:38,953 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847256340402937
+2025-02-22 19:26:13,312 - INFO - Running in Jupyter Notebook. Using default dataset.
+2025-02-22 19:26:13,313 - INFO - Loading dataset from concrete_data.csv
+2025-02-22 19:26:13,323 - INFO - Splitting dataset.
+2025-02-22 19:26:13,328 - INFO - Training and evaluating models.
+2025-02-22 19:26:13,334 - INFO - Linear Regression - MSE: 113.44365763931016, RMSE: 10.650993270080972, R² Score: 0.6006252770706919, Latency: 0.0039446353912353516
+2025-02-22 19:26:13,346 - INFO - Decision Tree - MSE: 48.65592669902914, RMSE: 6.975380039756195, R² Score: 0.8287083857426686, Latency: 0.010614395141601562
+2025-02-22 19:26:14,059 - INFO - Random Forest - MSE: 26.613475303985123, RMSE: 5.158824992571964, R² Score: 0.9063081220502538, Latency: 0.7108075618743896
+2025-02-22 19:26:14,107 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, R² Score: 0.9306274832011667, Latency: 0.04613542556762695
+2025-02-22 19:26:14,112 - INFO - Starting hyperparameter tuning for Random Forest.
+2025-02-22 19:26:21,503 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847256340402937
+2025-02-22 19:28:27,377 - INFO - Running in Jupyter Notebook. Using default dataset.
+2025-02-22 19:28:27,378 - INFO - Loading dataset from concrete_data.csv
+2025-02-22 19:28:27,385 - INFO - Splitting dataset.
+2025-02-22 19:28:27,391 - INFO - Training and evaluating models.
+2025-02-22 19:28:27,398 - INFO - Linear Regression - MSE: 113.44365763931016, RMSE: 10.650993270080972, R² Score: 0.6006252770706919, Latency: 0.004002571105957031
+2025-02-22 19:28:27,417 - INFO - Decision Tree - MSE: 48.65592669902914, RMSE: 6.975380039756195, R² Score: 0.8287083857426686, Latency: 0.016002178192138672
+2025-02-22 19:28:28,191 - INFO - Random Forest - MSE: 26.613475303985123, RMSE: 5.158824992571964, R² Score: 0.9063081220502538, Latency: 0.7715086936950684
+2025-02-22 19:28:28,202 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<Server.serve() done, defined at c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py:68> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 93, in run_until_complete
+    self._run_once()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 129, in _run_once
+    handle._run()
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 360, in __wakeup
+    self.__step()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 205, in step
+    step_orig(task, exc)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    with self.capture_signals():
+  File "c:\Users\nitdn\anaconda3\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 330, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-02-22 19:28:28,250 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, R² Score: 0.9306274832011667, Latency: 0.056405067443847656
+2025-02-22 19:28:28,255 - INFO - Starting hyperparameter tuning for Random Forest.
+2025-02-22 19:28:33,152 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847256340402937
+2025-02-22 19:30:28,493 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Server.serve() done, defined at c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py:68> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 93, in run_until_complete
+    self._run_once()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 129, in _run_once
+    handle._run()
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 360, in __wakeup
+    self.__step()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 205, in step
+    step_orig(task, exc)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    with self.capture_signals():
+  File "c:\Users\nitdn\anaconda3\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 330, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-02-22 19:31:31,220 - INFO - Running in Jupyter Notebook. Using default dataset.
+2025-02-22 19:31:31,221 - INFO - Loading dataset from concrete_data.csv
+2025-02-22 19:31:31,232 - INFO - Splitting dataset.
+2025-02-22 19:31:31,236 - INFO - Training and evaluating models.
+2025-02-22 19:31:31,242 - INFO - Linear Regression - MSE: 113.44365763931016, RMSE: 10.650993270080972, R² Score: 0.6006252770706919, Latency: 0.00400853157043457
+2025-02-22 19:31:31,254 - INFO - Decision Tree - MSE: 48.65592669902914, RMSE: 6.975380039756195, R² Score: 0.8287083857426686, Latency: 0.010504484176635742
+2025-02-22 19:31:31,988 - INFO - Random Forest - MSE: 26.613475303985123, RMSE: 5.158824992571964, R² Score: 0.9063081220502538, Latency: 0.7327580451965332
+2025-02-22 19:31:32,038 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, R² Score: 0.9306274832011667, Latency: 0.04840350151062012
+2025-02-22 19:31:32,045 - INFO - Starting hyperparameter tuning for Random Forest.
+2025-02-22 19:31:39,411 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847256340402937
+2025-02-22 19:32:31,952 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Server.serve() done, defined at c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py:68> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 93, in run_until_complete
+    self._run_once()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 129, in _run_once
+    handle._run()
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 360, in __wakeup
+    self.__step()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 205, in step
+    step_orig(task, exc)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    with self.capture_signals():
+  File "c:\Users\nitdn\anaconda3\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 330, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-02-22 19:32:47,055 - INFO - Running in Jupyter Notebook. Using default dataset.
+2025-02-22 19:32:47,056 - INFO - Loading dataset from concrete_data.csv
+2025-02-22 19:32:47,063 - INFO - Splitting dataset.
+2025-02-22 19:32:47,067 - INFO - Training and evaluating models.
+2025-02-22 19:32:47,074 - INFO - Linear Regression - MSE: 113.44365763931016, RMSE: 10.650993270080972, R² Score: 0.6006252770706919, Latency: 0.006008148193359375
+2025-02-22 19:32:47,086 - INFO - Decision Tree - MSE: 48.65592669902914, RMSE: 6.975380039756195, R² Score: 0.8287083857426686, Latency: 0.01098179817199707
+2025-02-22 19:32:47,835 - INFO - Random Forest - MSE: 26.613475303985123, RMSE: 5.158824992571964, R² Score: 0.9063081220502538, Latency: 0.7468283176422119
+2025-02-22 19:32:47,899 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, R² Score: 0.9306274832011667, Latency: 0.05906105041503906
+2025-02-22 19:32:47,906 - INFO - Starting hyperparameter tuning for Random Forest.
+2025-02-22 19:32:55,504 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847256340402937
+2025-02-22 19:34:10,982 - INFO - Running in Jupyter Notebook. Using default dataset.
+2025-02-22 19:34:10,986 - INFO - Loading dataset from concrete_data.csv
+2025-02-22 19:34:10,993 - INFO - Splitting dataset.
+2025-02-22 19:34:11,003 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Server.serve() done, defined at c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py:68> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 93, in run_until_complete
+    self._run_once()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 129, in _run_once
+    handle._run()
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 360, in __wakeup
+    self.__step()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 205, in step
+    step_orig(task, exc)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    with self.capture_signals():
+  File "c:\Users\nitdn\anaconda3\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 330, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-02-22 19:34:11,008 - INFO - Training and evaluating models.
+2025-02-22 19:34:11,026 - INFO - Linear Regression - MSE: 113.44365763931016, RMSE: 10.650993270080972, R² Score: 0.6006252770706919, Latency: 0.003998994827270508
+2025-02-22 19:34:11,046 - INFO - Decision Tree - MSE: 48.65592669902914, RMSE: 6.975380039756195, R² Score: 0.8287083857426686, Latency: 0.01600170135498047
+2025-02-22 19:34:11,786 - INFO - Random Forest - MSE: 26.613475303985123, RMSE: 5.158824992571964, R² Score: 0.9063081220502538, Latency: 0.7373387813568115
+2025-02-22 19:34:11,858 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, R² Score: 0.9306274832011667, Latency: 0.0695502758026123
+2025-02-22 19:34:11,866 - INFO - Starting hyperparameter tuning for Random Forest.
+2025-02-22 19:34:16,973 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847256340402937
+2025-02-22 19:35:43,916 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Server.serve() done, defined at c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py:68> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 93, in run_until_complete
+    self._run_once()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 129, in _run_once
+    handle._run()
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 360, in __wakeup
+    self.__step()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 205, in step
+    step_orig(task, exc)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    with self.capture_signals():
+  File "c:\Users\nitdn\anaconda3\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 330, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-02-22 19:35:59,404 - INFO - Running in Jupyter Notebook. Using default dataset.
+2025-02-22 19:35:59,405 - INFO - Loading dataset from concrete_data.csv
+2025-02-22 19:35:59,415 - INFO - Splitting dataset.
+2025-02-22 19:35:59,419 - INFO - Training and evaluating models.
+2025-02-22 19:35:59,429 - INFO - Linear Regression - MSE: 113.44365763931016, RMSE: 10.650993270080972, R² Score: 0.6006252770706919, Latency: 0.006018638610839844
+2025-02-22 19:35:59,448 - INFO - Decision Tree - MSE: 48.65592669902914, RMSE: 6.975380039756195, R² Score: 0.8287083857426686, Latency: 0.015811920166015625
+2025-02-22 19:36:00,186 - INFO - Random Forest - MSE: 26.613475303985123, RMSE: 5.158824992571964, R² Score: 0.9063081220502538, Latency: 0.7368605136871338
+2025-02-22 19:36:00,250 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, R² Score: 0.9306274832011667, Latency: 0.06008458137512207
+2025-02-22 19:36:00,257 - INFO - Starting hyperparameter tuning for Random Forest.
+2025-02-22 19:36:07,619 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847256340402937
+2025-02-22 19:40:34,804 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Server.serve() done, defined at c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py:68> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 93, in run_until_complete
+    self._run_once()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 129, in _run_once
+    handle._run()
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 360, in __wakeup
+    self.__step()
+  File "C:\Users\nitdn\AppData\Roaming\Python\Python311\site-packages\nest_asyncio.py", line 205, in step
+    step_orig(task, exc)
+  File "c:\Users\nitdn\anaconda3\Lib\asyncio\tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 69, in serve
+    with self.capture_signals():
+  File "c:\Users\nitdn\anaconda3\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "c:\Users\nitdn\anaconda3\Lib\site-packages\uvicorn\server.py", line 330, in capture_signals
+    signal.raise_signal(captured_signal)
+KeyboardInterrupt
+2025-02-22 19:40:52,943 - INFO - Running in Jupyter Notebook. Using default dataset.
+2025-02-22 19:40:52,945 - INFO - Loading dataset from concrete_data.csv
+2025-02-22 19:40:52,955 - INFO - Splitting dataset.
+2025-02-22 19:40:52,960 - INFO - Training and evaluating models.
+2025-02-22 19:40:52,966 - INFO - Linear Regression - MSE: 113.44365763931016, RMSE: 10.650993270080972, R² Score: 0.6006252770706919, Latency: 0.004304647445678711
+2025-02-22 19:40:52,980 - INFO - Decision Tree - MSE: 48.65592669902914, RMSE: 6.975380039756195, R² Score: 0.8287083857426686, Latency: 0.0113983154296875
+2025-02-22 19:40:53,789 - INFO - Random Forest - MSE: 26.613475303985123, RMSE: 5.158824992571964, R² Score: 0.9063081220502538, Latency: 0.8069934844970703
+2025-02-22 19:40:53,851 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, R² Score: 0.9306274832011667, Latency: 0.06069803237915039
+2025-02-22 19:40:53,857 - INFO - Starting hyperparameter tuning for Random Forest.
+2025-02-22 19:41:01,498 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847256340402937
+2025-02-22 21:16:40,453 - INFO - Running in Jupyter Notebook. Using default dataset.
+2025-02-22 21:16:40,456 - INFO - Loading dataset from concrete_data.csv
+2025-02-22 21:16:40,502 - INFO - Splitting dataset.
+2025-02-22 21:16:40,523 - INFO - Training and evaluating models.
+2025-02-22 21:16:40,538 - INFO - Linear Regression - MSE: 113.44365763931016, RMSE: 10.650993270080972, R² Score: 0.6006252770706919, Latency: 0.011333942413330078
+2025-02-22 21:16:40,558 - INFO - Decision Tree - MSE: 48.65592669902914, RMSE: 6.975380039756195, R² Score: 0.8287083857426686, Latency: 0.017998456954956055
+2025-02-22 21:16:42,332 - INFO - Random Forest - MSE: 26.613475303985123, RMSE: 5.158824992571964, R² Score: 0.9063081220502538, Latency: 1.7716240882873535
+2025-02-22 21:16:42,463 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, R² Score: 0.9306274832011667, Latency: 0.1222999095916748
+2025-02-22 21:16:42,472 - INFO - Starting hyperparameter tuning for Random Forest.
+2025-02-22 21:16:51,931 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847256340402937
+2025-02-22 21:17:39,774 - INFO - Running in Jupyter Notebook. Using default dataset.
+2025-02-22 21:17:39,778 - INFO - Loading dataset from concrete_data.csv
+2025-02-22 21:17:39,788 - INFO - Splitting dataset.
+2025-02-22 21:17:39,796 - INFO - Training and evaluating models.
+2025-02-22 21:17:39,809 - INFO - Linear Regression - MSE: 113.44365763931016, RMSE: 10.650993270080972, R² Score: 0.6006252770706919, Latency: 0.005258798599243164
+2025-02-22 21:17:39,872 - INFO - Decision Tree - MSE: 48.65592669902914, RMSE: 6.975380039756195, R² Score: 0.8287083857426686, Latency: 0.04659008979797363
+2025-02-22 21:17:41,641 - INFO - Random Forest - MSE: 26.613475303985123, RMSE: 5.158824992571964, R² Score: 0.9063081220502538, Latency: 1.7633042335510254
+2025-02-22 21:17:41,748 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, R² Score: 0.9306274832011667, Latency: 0.10118341445922852
+2025-02-22 21:17:41,754 - INFO - Starting hyperparameter tuning for Random Forest.
+2025-02-22 21:17:48,635 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847256340402937

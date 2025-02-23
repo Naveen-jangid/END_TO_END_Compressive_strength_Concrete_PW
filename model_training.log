@@ -284,3 +284,14 @@ KeyboardInterrupt
 2025-02-22 21:17:41,748 - INFO - XGBoost - MSE: 19.705483580885385, RMSE: 4.439085894740649, RÂ² Score: 0.9306274832011667, Latency: 0.10118341445922852
 2025-02-22 21:17:41,754 - INFO - Starting hyperparameter tuning for Random Forest.
 2025-02-22 21:17:48,635 - INFO - Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF RÂ² Score: 0.8847256340402937
+2025-02-23 20:54:09,949 - INFO - \U0001f4c2 Loading dataset from concrete_data.csv...
+2025-02-23 20:54:09,970 - INFO - \u2705 Dataset loaded successfully.
+2025-02-23 20:54:09,971 - INFO - \U0001f4ca Splitting dataset into training, validation, and test sets...
+2025-02-23 20:54:09,982 - INFO - \u2705 Data split successfully.
+2025-02-23 20:54:09,983 - INFO - \U0001f680 Training and evaluating models...
+2025-02-23 20:54:10,001 - INFO - \u2705 Linear Regression - MSE: 113.4437, RMSE: 10.6510, R² Score: 0.6006, Latency: 0.011s
+2025-02-23 20:54:10,047 - INFO - \u2705 Decision Tree - MSE: 48.6559, RMSE: 6.9754, R² Score: 0.8287, Latency: 0.041s
+2025-02-23 20:54:12,351 - INFO - \u2705 Random Forest - MSE: 26.6135, RMSE: 5.1588, R² Score: 0.9063, Latency: 2.3s
+2025-02-23 20:54:12,473 - INFO - \u2705 XGBoost - MSE: 19.7055, RMSE: 4.4391, R² Score: 0.9306, Latency: 0.12s
+2025-02-23 20:54:12,488 - INFO - \U0001f50d Performing hyperparameter tuning for Random Forest...
+2025-02-23 20:54:21,832 - INFO - \u2705 Best RF Params: {'max_depth': 15, 'n_estimators': 150}, Best RF R² Score: 0.8847

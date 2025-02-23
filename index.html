@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Strength Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 5px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .result {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Concrete Strength Prediction</h2>
+    <div class="container">
+        <form action="/predict" method="post">
+            <input type="text" name="cement" placeholder="Cement" required>
+            <input type="text" name="slag" placeholder="Blast Furnace Slag">
+            <input type="text" name="flyash" placeholder="Fly Ash">
+            <input type="text" name="water" placeholder="Water">
+            <input type="text" name="superplasticizer" placeholder="Superplasticizer">
+            <input type="text" name="coarseagg" placeholder="Coarse Aggregate">
+            <input type="text" name="fineagg" placeholder="Fine Aggregate">
+            <input type="text" name="age" placeholder="Age" required>
+            
+            <button type="submit">Predict</button>
+        </form>
+        
+        <h2>{{ prediction_text }}</h2>
+        
+        
+
+        {% if prediction is not none %}
+            <p class="result">Predicted Strength: {{ prediction }} MPa</p>
+        {% endif %}
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

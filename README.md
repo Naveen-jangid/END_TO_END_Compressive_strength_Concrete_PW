@@ -1,9 +1,9 @@
 # Concrete Strength Prediction using Machine Learning
 
-## 📌 Project Overview
+##  Project Overview
 This project predicts the **compressive strength of concrete** using machine learning techniques. The model takes input parameters such as cement, blast furnace slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate, and age to estimate the concrete's strength in MPa.
 
-## 🚀 Project Tasks
+##  Project Tasks
 1. **Data Preprocessing**: Cleaning and preparing the dataset.
 2. **Model Training**: Training a machine learning model (Random Forest Regressor) for prediction.
 3. **Model Deployment**: Deploying the model using **Flask** and **Render**.
@@ -11,12 +11,12 @@ This project predicts the **compressive strength of concrete** using machine lea
 5. **GitHub Actions & Workflow**: Setting up CI/CD pipeline for automated deployments.
 6. **Model Evaluation**: Comparing different models to determine the best-performing one.
 
-## 🏆 Best Performing Model
+##  Best Performing Model
 After training multiple models, **Random Forest Regressor** was found to provide the most accurate predictions. Below is a comparison of model performances:
 
 ![Model Performance](./images/model_performance.png)
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### 1️⃣ Clone the Repository
 ```bash
@@ -42,7 +42,7 @@ python app.py
 
 Then, open **http://127.0.0.1:5000/** in your browser.
 
-## 📤 Deployment on Render
+##  Deployment on Render
 1. Push your code to GitHub.
 2. Sign up on [Render](https://render.com/).
 3. Create a **new Web Service** and connect your repository.
@@ -56,19 +56,19 @@ Then, open **http://127.0.0.1:5000/** in your browser.
    ```
 6. Deploy and get your live URL!
 
-## 🛠️ GitHub Workflow (CI/CD)
+##  GitHub Workflow (CI/CD)
 We use GitHub Actions for automated deployment.
 - **.github/workflows/deploy.yml** handles testing and deployment.
 - Every push to the main branch triggers an automatic deployment.
 
-## 🔥 Common Issues & Fixes
+##  Common Issues & Fixes
 **Issue:** `gunicorn: command not found`
 - **Solution:** Add `gunicorn` to `requirements.txt` and redeploy.
 
 **Issue:** Internal Server Error
 - **Solution:** Check Render logs and ensure all dependencies are installed correctly.
 
-## 📸 Project Screenshots (Optional)
+##  Project Screenshots (Optional)
 ![Input Form](./images/input_form.png)
 ![Prediction Output](./images/output.png)
 ![Model Performance](./images/model_performance.png)
